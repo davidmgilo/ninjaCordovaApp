@@ -37,13 +37,13 @@ var app = {
         }else {
             alert('Vibrate not supported')
         }
-
+        this.changePicture();
 
     },
 
 
-    changePicture: function(event) {
-    event.preventDefault();
+    changePicture: function() {
+    // event.preventDefault();
     if (!navigator.camera) {
         alert("Camera API not supported", "Error");
         return;

@@ -87,7 +87,8 @@ module.exports.metadata =
     "cordova-plugin-dialogs": "1.3.1",
     "cordova-plugin-vibration": "2.1.3",
     "cordova-plugin-compat": "1.1.0",
-    "cordova-plugin-camera": "2.3.1"
+    "cordova-plugin-camera": "2.3.1",
+    "cordova-plugin-geolocation": "2.4.1"
 }
 // BOTTOM OF METADATA
 });
