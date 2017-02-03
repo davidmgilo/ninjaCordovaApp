@@ -4,7 +4,8 @@
   "description": "",
   "main": "www/js/index.js",
   "dependencies": {
-    "fastclick": "^1.0.6"
+    "fastclick": "^1.0.6",
+    "jquery": "^3.1.1"
   },
   "devDependencies": {},
   "scripts": {
