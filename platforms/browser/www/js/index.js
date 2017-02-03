@@ -27,6 +27,7 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
+        this.logDeviceInfo()
         this.receivedEvent('deviceready');
     },
 
@@ -40,6 +41,10 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+    },
+
+    logDeviceInfo: function () {
+        console.log(device)
     }
 };
 
