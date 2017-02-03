@@ -38,9 +38,25 @@ var app = {
             alert('Vibrate not supported')
         }
         this.changePicture();
+        this.addLocation();
 
     },
 
+    addLocation : function() {
+    //event.preventDefault();
+        if(!navigator.geolocation){
+            alert('Geolocation not supported');
+            return;
+        }
+        navigator.geolocation.getCurrentPosition(
+            function(position) {
+                alert(position.coords.latitude + ',' + position.coords.longitude);
+            },
+            function() {
+                alert('Error getting location');
+            });
+        return false;
+    },
 
     changePicture: function() {
     // event.preventDefault();

@@ -42,6 +42,23 @@ var app = {
 
     },
 
+    addToContacts : function() {
+    // event.preventDefault();
+        console.log('addToContacts');
+        if (!navigator.contacts) {
+            alert("Contacts API not supported", "Error");
+            return;
+        }
+        var contact = navigator.contacts.create();
+        contact.name = {givenName: 'Sergi', familyName: 'Tur'};
+        var phoneNumbers = [];
+        phoneNumbers[0] = new ContactField('work', '679525478', false);
+        phoneNumbers[1] = new ContactField('mobile', '12123123', true);
+        contact.phoneNumbers = phoneNumbers;
+        contact.save();
+        return false;
+    },
+
     addLocation : function() {
     //event.preventDefault();
         if(!navigator.geolocation){
