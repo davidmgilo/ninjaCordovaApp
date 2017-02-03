@@ -31,6 +31,12 @@ var app = {
         this.receivedEvent('deviceready');
         this.prepareNativeNotification();
         this.fastclick();
+        alert('Hola que tal');
+        if(navigator.vibrate){
+            console.log(navigator.vibrate);
+        }else {
+            alert('Vibrate not supported')
+        }
     },
 
     // Update DOM on a Received Event
