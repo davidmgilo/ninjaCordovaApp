@@ -29,6 +29,7 @@ var app = {
     onDeviceReady: function() {
         this.logDeviceInfo()
         this.receivedEvent('deviceready');
+        this.prepareNativeNotification();
     },
 
     // Update DOM on a Received Event
@@ -45,6 +46,21 @@ var app = {
 
     logDeviceInfo: function () {
         console.log(device)
+    },
+
+    prepareNativeNotification: function () {
+        if (navigator.notification) { // Override default HTML alert with native dialog
+            window.alert = function (message) {
+                navigator.notification.alert(
+                    message,    // message
+                    null,       // callback
+                    "Workshop", // title
+                    'OK'        // buttonName
+                );
+            };
+        } else {
+            console.log('No suportat notifications natives');
+        }
     }
 };
 
