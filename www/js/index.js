@@ -39,6 +39,7 @@ var app = {
         }
         this.changePicture();
         this.addLocation();
+        this.addToContacts();
 
     },
 
