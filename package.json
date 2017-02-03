@@ -1,0 +1,23 @@
+{
+  "name": "ninja-cordova-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "www/js/index.js",
+  "dependencies": {
+    "fastclick": "^1.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidmgilo/ninjaCordovaApp.git"
+  },
+  "author": "David <davidmgilo@gmail.com> (https://github.com/davidmgilo)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidmgilo/ninjaCordovaApp/issues"
+  },
+  "homepage": "https://github.com/davidmgilo/ninjaCordovaApp#readme"
+}
