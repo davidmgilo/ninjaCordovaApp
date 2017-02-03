@@ -27,9 +27,10 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-        this.logDeviceInfo()
+        this.logDeviceInfo();
         this.receivedEvent('deviceready');
         this.prepareNativeNotification();
+        this.fastclick();
     },
 
     // Update DOM on a Received Event
@@ -61,6 +62,10 @@ var app = {
         } else {
             console.log('No suportat notifications natives');
         }
+    },
+
+    fastclick: function () {
+        FastClick.attach(document.body);
     }
 };
 
