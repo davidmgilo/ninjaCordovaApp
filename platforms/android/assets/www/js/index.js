@@ -34,12 +34,13 @@ var app = {
         alert('Hola que tal');
         if(navigator.vibrate){
             console.log(navigator.vibrate);
+            navigator.vibrate(3000);
         }else {
             alert('Vibrate not supported')
         }
-        this.changePicture();
-        this.addLocation();
-        this.addToContacts();
+        // this.changePicture();
+        // this.addLocation();
+        // this.addToContacts();
 
     },
 
